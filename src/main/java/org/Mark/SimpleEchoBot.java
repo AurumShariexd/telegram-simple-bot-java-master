@@ -29,7 +29,7 @@ public class SimpleEchoBot extends TelegramLongPollingBot {
             //Запит на будівництво, який потрібно надіслати в Telegram API
             SendMessage sendMessage = SendMessage.builder()
                     .chatId(update.getMessage().getChat().getId().toString())
-                    .text("Привіт, Лера: " + textFromUser)
+                    .text("Привіт, Панні: " + textFromUser)
                     .build();
             try {
                 //відправка повідомлення через Telegram API
